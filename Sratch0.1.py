@@ -1,12 +1,6 @@
-weak = True
-count = 0
-while weak and count <= 5:
-    password = input("Password: ")
-    lenght = len(password)
-    if lenght <= 8:
-        weak = True
-        count +=1
+for i in range(5):
+    if len(input("Password: ")) <= 8:
         print("Weak Password!")
     else:
-        weak = False
         print("Strong Password!")
+        break
